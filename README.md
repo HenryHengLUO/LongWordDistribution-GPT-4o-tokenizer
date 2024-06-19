@@ -4,18 +4,30 @@ Welcome to this exciting project where we dive deep into the world of long word 
 
 ## Project Overview
 
+<<<<<<< HEAD
 The main objective of this project is to uncover the top 100 long token sub-words for 10 different languages. These languages include:
+=======
+The main objective of this project is to uncover the top 100 long token sub-words for 11 different languages. These languages include:
+>>>>>>> 86d5be4 (second commit, add Turkish)
 
 1. English 🇺🇸
 2. Japanese 🇯🇵
 3. Korean 🇰🇷
+<<<<<<< HEAD
 4. Chinese 🇨🇳
+=======
+4. Chinese 🇨🇳🇨
+>>>>>>> 86d5be4 (second commit, add Turkish)
 5. Russian 🇷🇺
 6. German 🇩🇪
 7. French 🇫🇷
 8. Italian 🇮🇹
 9. Spanish 🇪🇸
 10. Portuguese 🇵🇹
+<<<<<<< HEAD
+=======
+11. Turkish 🇹🇷
+>>>>>>> 86d5be4 (second commit, add Turkish)
 
 To achieve this, we utilized the [tiktoken](https://github.com/openai/tiktoken?tab=readme-ov-file#-tiktoken) library, a lightning-fast open-source tokenizer developed by OpenAI that makes [encoding and decoding](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb) a breeze. 🌪️📚
 

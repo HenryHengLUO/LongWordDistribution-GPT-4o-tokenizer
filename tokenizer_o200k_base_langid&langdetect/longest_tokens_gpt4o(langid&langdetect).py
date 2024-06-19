@@ -39,11 +39,19 @@ df_italian = pd.DataFrame(columns=['Rank', 'Encoding', 'Word Length', 'Word', 'L
 df_portuguese = pd.DataFrame(columns=['Rank', 'Encoding', 'Word Length', 'Word', 'Language Score_langdetect', 'Language Score_langid'])
 df_korean = pd.DataFrame(columns=['Rank', 'Encoding', 'Word Length', 'Word', 'Language Score_langdetect', 'Language Score_langid'])
 df_russsian = pd.DataFrame(columns=['Rank', 'Encoding', 'Word Length', 'Word', 'Language Score_langdetect', 'Language Score_langid'])
+<<<<<<< HEAD
+=======
+df_turkish = pd.DataFrame(columns=['Rank', 'Encoding', 'Word Length', 'Word', 'Language Score_langdetect', 'Language Score_langid'])
+>>>>>>> 86d5be4 (second commit, add Turkish)
 
 
 
 # Print the top 100 long words for each language
+<<<<<<< HEAD
 Num_engligh = Num_chinese = Num_japanese = Num_french = Num_german = Num_spanish = Num_italian = Num_portuguese = Num_korean = Num_russsian = 1
+=======
+Num_engligh = Num_chinese = Num_japanese = Num_french = Num_german = Num_spanish = Num_italian = Num_portuguese = Num_korean = Num_russsian = Num_turkish = 1
+>>>>>>> 86d5be4 (second commit, add Turkish)
 
 for item in length_dict:
     try:
@@ -100,9 +108,19 @@ for item in length_dict:
         elif current_lang == "ru" and Num_russsian <= 100:
             df_russsian = df_russsian._append({'Rank': Num_russsian, 'Encoding': item, 'Word Length': length_dict[item], 'Word': current_word, 'Language Score_langdetect':current_langs_langdetect[0].prob, 'Language Score_langid':current_lang_class_langid[1]}, ignore_index=True);
             Num_russsian += 1  
+<<<<<<< HEAD
     except:
         pass
     if Num_engligh > 100 and Num_chinese > 100 and Num_japanese > 100 and Num_french > 100 and Num_german > 100 and Num_spanish > 100 and Num_italian > 100 and Num_portuguese > 100 and Num_korean > 100:
+=======
+        elif current_lang == "tr" and Num_turkish <= 100:
+            df_turkish = df_turkish._append({'Rank': Num_turkish, 'Encoding': item, 'Word Length': length_dict[item], 'Word': current_word, 'Language Score_langdetect':current_langs_langdetect[0].prob, 'Language Score_langid':current_lang_class_langid[1]}, ignore_index=True);
+            Num_turkish += 1
+
+    except:
+        pass
+    if Num_engligh > 100 and Num_chinese > 100 and Num_japanese > 100 and Num_french > 100 and Num_german > 100 and Num_spanish > 100 and Num_italian > 100 and Num_portuguese > 100 and Num_korean > 100 and Num_russsian > 100 and Num_turkish > 100:
+>>>>>>> 86d5be4 (second commit, add Turkish)
         break
 
 
@@ -116,6 +134,10 @@ print(df_italian)
 print(df_portuguese)
 print(df_korean)
 print(df_russsian)
+<<<<<<< HEAD
+=======
+print(df_turkish)
+>>>>>>> 86d5be4 (second commit, add Turkish)
 
 
 
@@ -132,4 +154,9 @@ df_spanish.to_csv(path+'df_spanish.csv', index=False)
 df_italian.to_csv(path+'df_italian.csv', index=False)
 df_portuguese.to_csv(path+'df_portuguese.csv', index=False)
 df_korean.to_csv(path+'df_korean.csv', index=False)
+<<<<<<< HEAD
 df_russsian.to_csv(path+'df_russsian.csv', index=False)
+=======
+df_russsian.to_csv(path+'df_russsian.csv', index=False)
+df_turkish.to_csv(path+'df_turkish.csv', index=False)
+>>>>>>> 86d5be4 (second commit, add Turkish)
